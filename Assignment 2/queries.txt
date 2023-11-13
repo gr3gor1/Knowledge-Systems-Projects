@@ -1,0 +1,64 @@
+PREFIX prop: <http://example.org/props/>
+PREFIX ns: <http://example.org/ns/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT (COUNT(DISTINCT ?s) AS ?total)
+WHERE {
+	?s rdf:type ns:RockSong .
+}
+
+PREFIX prop: <http://example.org/props/>
+PREFIX ns: <http://example.org/ns/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT (COUNT(DISTINCT ?s) AS ?total)
+WHERE {
+	?s prop:hasGenre ns:Rock .
+}
+
+ PREFIX prop: <http://example.org/props/>
+PREFIX ns: <http://example.org/ns/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT (COUNT(DISTINCT ?s) AS ?total)
+WHERE {
+	?s prop:hasPlace ns:Berlin .
+}
+
+ PREFIX prop: <http://example.org/props/>
+PREFIX ns: <http://example.org/ns/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT (COUNT(DISTINCT ?s) AS ?total)
+WHERE {
+	ns:Berlin ns:isPlace ?s .
+}
+
+  PREFIX prop: <http://example.org/props/>
+PREFIX ns: <http://example.org/ns/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT (COUNT(DISTINCT ?s) AS ?total)
+WHERE {
+	?s prop:hasInstrument ns:Woodwind.
+}
+
+PREFIX prop: <http://example.org/props/>
+PREFIX ns: <http://example.org/ns/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT (COUNT(DISTINCT ?s) AS ?total)
+WHERE {
+	?s a ns:WoodwindSong.
+}
+
+   PREFIX prop: <http://example.org/props/>
+PREFIX ns: <http://example.org/ns/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT (COUNT(DISTINCT ?s) AS ?total)
+WHERE {
+	?s prop:hasGenre ns:Country.
+    ?s prop:hasEmotion ns:Pleasure.
+}
+
+  PREFIX prop: <http://example.org/props/>
+PREFIX ns: <http://example.org/ns/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT (COUNT(DISTINCT ?s) AS ?total)
+WHERE {
+	?s rdf:type ns:PleasureCountrySong.
+}

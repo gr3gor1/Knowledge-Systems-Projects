@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="/content/content/songs.nt"
+         xmlns="/content/content/songs.nt#"
+         xmlns:ns="http://example.org/ns/">
+
+<owl:Ontology rdf:about="/content/content/songs.nt"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasPublisher"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasGenre"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasPlace"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasEmotion"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasComposer"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/props/hasInstrument"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasTitle"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasDateOfBirth"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasYear"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasDuration"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasBiography"/>
+
+<owl:DatatypeProperty rdf:about="http://example.org/props/hasDateOfDeath"/>
+
+<owl:Class rdf:about="http://example.org/ns/Song">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/Genres">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/Emotions">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/Instruments">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/Composer">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/Publisher">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/Place">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/PopSong">
+  <rdfs:subClassOf rdf:resource="http://example.org/ns/Song"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/RockSong">
+  <rdfs:subClassOf rdf:resource="http://example.org/ns/Song"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/CountrySong">
+  <rdfs:subClassOf rdf:resource="http://example.org/ns/Song"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/OperaSong">
+  <rdfs:subClassOf rdf:resource="http://example.org/ns/Song"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/ClassicalSong">
+  <rdfs:subClassOf rdf:resource="http://example.org/ns/Song"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/InstrumentalSong">
+  <rdfs:subClassOf rdf:resource="http://example.org/ns/Song"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/FunkSong">
+  <rdfs:subClassOf rdf:resource="http://example.org/ns/Song"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/Traditional_FolkSong">
+  <rdfs:subClassOf rdf:resource="http://example.org/ns/Song"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/JazzSong">
+  <rdfs:subClassOf rdf:resource="http://example.org/ns/Song"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/Hip_HopSong">
+  <rdfs:subClassOf rdf:resource="http://example.org/ns/Song"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/ns/ReggaeSong">
+  <rdfs:subClassOf rdf:resource="http://example.org/ns/Song"/>
+</owl:Class>
+
+<ns:Genres rdf:about="file:////tmp//content/songs.nt#Country"/>
+
+<ns:Genres rdf:about="file:////tmp//content/songs.nt#Rock"/>
+
+<ns:Genres rdf:about="file:////tmp//content/songs.nt#Pop"/>
+
+<ns:Genres rdf:about="file:////tmp//content/songs.nt#Traditional_Folk"/>
+
+<ns:Genres rdf:about="file:////tmp//content/songs.nt#Reggae"/>
+
+<ns:Genres rdf:about="file:////tmp//content/songs.nt#Opera"/>
+
+<ns:Genres rdf:about="file:////tmp//content/songs.nt#Funk"/>
+
+<ns:Genres rdf:about="file:////tmp//content/songs.nt#Jazz"/>
+
+<ns:Genres rdf:about="file:////tmp//content/songs.nt#Instrumental"/>
+
+<ns:Genres rdf:about="file:////tmp//content/songs.nt#Classical"/>
+
+<ns:Genres rdf:about="file:////tmp//content/songs.nt#Hip_Hop"/>
+
+
+</rdf:RDF>
